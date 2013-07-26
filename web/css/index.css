@@ -1,0 +1,58 @@
+body
+{
+    font-family: 'Helvetica Neue',Helvetica,Arial,san-serif;
+    font-weight: 200;
+    khtml-user-select: none;
+    margin: 50px 0;
+    moz-user-select: none;
+    o-user-select: none;
+    padding: 0;
+    user-select: none;
+    webkit-user-select: none;
+}
+#outer
+{
+    margin: 0 auto;
+    width: 600px;
+}
+.player
+{
+    padding: 5px;
+}
+.player .name
+{
+    display: inline-block;
+    font-size: 1.75em;
+    width: 300px;
+}
+.player .score
+{
+    color: #777;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: right;
+    width: 100px;
+}
+.player.selected
+{
+    background-color: #ff0;
+}
+.player.selected .score
+{
+    color: #000;
+}
+.details,.none
+{
+    border-color: #ccc;
+    border-style: dashed none none none;
+    border-width: 4px;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 50px 10px;
+    padding: 10px 0;
+}
+.none
+{
+    color: #777;
+}

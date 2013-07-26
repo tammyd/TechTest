@@ -1,0 +1,29 @@
+<!DOCTYPE html><head>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/leaderboard.js" ></script>
+    <title>Leaderboard</title>
+
+    <style type="text/css"></style></head>
+<body ng-app>
+<div id="outer" ng-controller="LeaderboardCtrl">
+    <div class="leaderboard" >
+        <div class="player person-{{$index}}" ng-repeat="row in leaderboard.rows">
+            <span ng-click="doSelect($index)">
+                <span class="name">{{row.key}}</span>
+                <span class="score">{{row.value}}</span>
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="details none">
+        <div class="name">Click a player to select</div>
+        <input type="button" class="inc" value="Give {{increment}} points" style='display:none' ng-click="doUpdate()">
+    </div>
+
+</div>
+</body>
+</html>
