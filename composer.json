@@ -1,5 +1,6 @@
 {
     "require": {
+        "php": ">=5.4",
         "slim/slim": "2.*",
         "slim/extras": "dev-master",
         "guzzle/guzzle": "3.*",
